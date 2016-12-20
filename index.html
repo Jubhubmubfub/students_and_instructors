@@ -28,8 +28,12 @@
 
        function studentsAndInstructors(){
          console.log("Students");
-         for(var person in students){
-           console.log(students[person].index);
+         for(var i=0;i<users.Students.length;i++){
+           console.log((i+1) + " - " + users.Students[i].first_name.toUpperCase() + " " + users.Students[i].last_name.toUpperCase() + " - " + (users.Students[i].first_name.length + users.Students[i].last_name.length));
+         }
+         console.log("Instructors");
+         for(var i=0;i<users.Instructors.length;i++){
+           console.log((i+1) + " - " + users.Instructors[i].first_name.toUpperCase() + " " + users.Instructors[i].last_name.toUpperCase() + " - " + (users.Instructors[i].first_name.length + users.Instructors[i].last_name.length));
          }
        }
     </script>
